@@ -1,0 +1,41 @@
+{
+  "name": "auth-admin-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node -r dotenv/config server/index.js",
+    "init-db": "node server/init-db.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.0",
+    "@heroicons/vue": "^2.0.18",
+    "@suadelabs/vue3-multiselect": "^1.0.2",
+    "@tinymce/tinymce-vue": "^6.1.0",
+    "@vueform/multiselect": "^2.6.11",
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "core-js": "^3.35.0",
+    "cors": "^2.8.5",
+    "docxtemplater": "^3.56.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "file-saver": "^2.0.5",
+    "flowbite": "^2.5.2",
+    "flowbite-vue": "^0.1.2",
+    "fs": "^0.0.1-security",
+    "html-to-docx": "^1.8.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "pizzip": "^3.1.7",
+    "qs": "^6.13.1",
+    "sqlite3": "^5.1.6",
+    "vue": "^3.4.21",
+    "vue-multiselect": "^3.1.0",
+    "vue-router": "^4.3.0",
+    "vuedraggable": "^4.1.0",
+    "vuex": "^4.1.0",
+    "winston": "^3.17.0",
+    "wrap-ansi": "^9.0.0"
+  }
+}
