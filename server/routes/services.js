@@ -1,13 +1,12 @@
-const express = require('express');
+import express from 'express';
+import { db } from '../index.js';
+import { requireAuth, requireAdmin } from '../middleware/auth.js';
+
 const router = express.Router();
-const Database = require('../db');
-const db = Database.db;
-const { requireAuth, requireAdmin } = require('../middleware/auth');
 
 // Get all services
 router.get('/', requireAuth, async (req, res) => {
   try {
-    console.log('Fetching services...');
     const services = await new Promise((resolve, reject) => {
       db.all(
         `SELECT id, name, title, display_order
@@ -15,18 +14,12 @@ router.get('/', requireAuth, async (req, res) => {
          ORDER BY display_order ASC`,
         [],
         (err, rows) => {
-          if (err) {
-            console.error('Database error:', err);
-            reject(err);
-          } else {
-            console.log('Services found:', rows);
-            resolve(rows);
-          }
+          if (err) reject(err);
+          else resolve(rows);
         }
       );
     });
 
-    console.log('Services fetched:', services);
     res.json(services);
   } catch (error) {
     console.error('Error fetching services:', error);
@@ -104,4 +97,4 @@ router.delete('/:id', requireAuth, requireAdmin, async (req, res) => {
   }
 });
 
-module.exports = router; 
+export default router; 

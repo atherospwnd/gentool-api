@@ -2,6 +2,7 @@
   "name": "auth-admin-system",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "NODE_ENV=production node -r dotenv/config server/index.js",
     "init-db": "node server/init-db.js"
@@ -10,7 +11,6 @@
     "@babel/runtime": "^7.24.0",
     "@heroicons/vue": "^2.0.18",
     "@suadelabs/vue3-multiselect": "^1.0.2",
-    "@tinymce/tinymce-vue": "^6.1.0",
     "@vueform/multiselect": "^2.6.11",
     "axios": "^1.6.2",
     "bcryptjs": "^2.4.3",
@@ -27,6 +27,7 @@
     "html-to-docx": "^1.8.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
     "pizzip": "^3.1.7",
     "qs": "^6.13.1",
     "sqlite3": "^5.1.6",
@@ -36,6 +37,8 @@
     "vuedraggable": "^4.1.0",
     "vuex": "^4.1.0",
     "winston": "^3.17.0",
-    "wrap-ansi": "^9.0.0"
+    "wrap-ansi": "^9.0.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
   }
 }

@@ -1,35 +1,29 @@
-const winston = require('winston');
-const path = require('path');
+import winston from 'winston';
+import path from 'path';
 
-// Define log format
-const logFormat = winston.format.combine(
-  winston.format.timestamp(),
-  winston.format.printf(({ timestamp, level, message }) => {
-    return `${timestamp} [${level.toUpperCase()}]: ${message}`;
-  })
-);
-
-// Create logger instance
 const logger = winston.createLogger({
-  format: logFormat,
+  level: process.env.NODE_ENV === 'production' ? 'info' : 'debug',
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json()
+  ),
   transports: [
-    // Console logging
+    // Write all logs to console
     new winston.transports.Console({
       format: winston.format.combine(
         winston.format.colorize(),
-        logFormat
+        winston.format.simple()
       )
     }),
-    // Error log file
-    new winston.transports.File({ 
-      filename: path.join(__dirname, '../logs/error.log'), 
-      level: 'error' 
+    // Write production logs to file
+    new winston.transports.File({
+      filename: path.join(process.cwd(), 'logs', 'error.log'),
+      level: 'error'
     }),
-    // Combined log file
-    new winston.transports.File({ 
-      filename: path.join(__dirname, '../logs/combined.log')
+    new winston.transports.File({
+      filename: path.join(process.cwd(), 'logs', 'combined.log')
     })
   ]
 });
 
-module.exports = logger; 
+export default logger; 
