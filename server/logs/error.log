@@ -174,3 +174,36 @@
     at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
     at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
     at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
+2025-01-14T08:13:27.905Z [ERROR]: Login error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT * FROM users WHERE username = ?', [ 'admin' ], [Function (anonymous)])
+    at user (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:76:10)
+    at new Promise (<anonymous>)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:75:24
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
+2025-01-14T08:13:28.595Z [ERROR]: Login error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT * FROM users WHERE username = ?', [ 'admin' ], [Function (anonymous)])
+    at user (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:76:10)
+    at new Promise (<anonymous>)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:75:24
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
+2025-01-14T08:13:28.843Z [ERROR]: Login error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT * FROM users WHERE username = ?', [ 'admin' ], [Function (anonymous)])
+    at user (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:76:10)
+    at new Promise (<anonymous>)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:75:24
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)

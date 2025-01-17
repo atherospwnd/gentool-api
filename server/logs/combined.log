@@ -1272,3 +1272,70 @@
     at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
 2025-01-10T09:34:02.239Z [INFO]: Login attempt for username: admin
 2025-01-10T09:34:14.144Z [INFO]: Login attempt for username: admin
+2025-01-14T07:00:12.787Z [INFO]: PUT /api/api/profile - IP: ::1
+2025-01-14T07:00:21.297Z [INFO]: PUT /api/api/profile - IP: ::1
+2025-01-14T07:00:21.695Z [INFO]: PUT /api/api/profile - IP: ::1
+2025-01-14T07:02:35.737Z [INFO]: PUT /api/profile - IP: ::1
+2025-01-14T07:02:37.759Z [INFO]: PUT /api/profile - IP: ::1
+2025-01-14T07:02:38.078Z [INFO]: PUT /api/profile - IP: ::1
+2025-01-14T07:02:38.231Z [INFO]: PUT /api/profile - IP: ::1
+2025-01-14T07:03:50.662Z [INFO]: PUT /api/profile - IP: ::1
+2025-01-14T07:06:16.790Z [INFO]: Login attempt for username: admin
+2025-01-14T07:06:19.396Z [INFO]: Login attempt for username: admin
+2025-01-14T07:06:34.741Z [INFO]: Login attempt for username: admin
+2025-01-14T08:04:05.252Z [INFO]: Login attempt for username: admin
+2025-01-14T08:04:05.890Z [INFO]: Login attempt for username: admin
+2025-01-14T08:09:29.193Z [INFO]: Login attempt for username: admin
+2025-01-14T08:09:31.338Z [INFO]: Login attempt for username: admin
+2025-01-14T08:09:33.869Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:10.744Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:24.942Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:25.661Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:25.811Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:25.968Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:26.111Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:26.272Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:26.437Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:26.604Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:26.779Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:26.960Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:27.160Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:27.438Z [INFO]: Login attempt for username: admin
+2025-01-14T08:10:27.768Z [INFO]: Login attempt for username: admin
+2025-01-14T08:13:27.903Z [INFO]: Login attempt for username: admin
+2025-01-14T08:13:27.905Z [ERROR]: Login error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT * FROM users WHERE username = ?', [ 'admin' ], [Function (anonymous)])
+    at user (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:76:10)
+    at new Promise (<anonymous>)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:75:24
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
+2025-01-14T08:13:28.593Z [INFO]: Login attempt for username: admin
+2025-01-14T08:13:28.595Z [ERROR]: Login error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT * FROM users WHERE username = ?', [ 'admin' ], [Function (anonymous)])
+    at user (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:76:10)
+    at new Promise (<anonymous>)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:75:24
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
+2025-01-14T08:13:28.840Z [INFO]: Login attempt for username: admin
+2025-01-14T08:13:28.843Z [ERROR]: Login error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT * FROM users WHERE username = ?', [ 'admin' ], [Function (anonymous)])
+    at user (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:76:10)
+    at new Promise (<anonymous>)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/server/index.js:75:24
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/dimsum/Library/Mobile Documents/com~apple~CloudDocs/projects/redteam/node_modules/express/lib/router/index.js:346:12)
+2025-01-14T08:14:55.801Z [INFO]: Login attempt for username: admin
