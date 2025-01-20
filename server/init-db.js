@@ -150,44 +150,6 @@ const initDb = async () => {
         ]
       },
       {
-        id: Date.now() + 1,
-        title: "Client Information",
-        fields: [
-          {
-            id: "company_name",
-            type: "text",
-            label: "Company name",
-            required: true,
-            minLength: 2,
-            maxLength: 100
-          },
-          {
-            id: "client_name",
-            type: "text",
-            label: "Client name",
-            required: true,
-            minLength: 2,
-            maxLength: 100
-          },
-          {
-            id: "client_email",
-            type: "email",
-            label: "Client email",
-            required: true,
-            pattern: "^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$",
-            maxLength: 255
-          },
-          {
-            id: "company_number",
-            type: "text",
-            label: "Company number",
-            required: true,
-            minLength: 5,
-            maxLength: 20
-          }
-        ]
-      },
-      {
         id: Date.now() + 3,
         title: "Services",
         fields: [
